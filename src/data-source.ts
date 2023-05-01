@@ -10,7 +10,7 @@ const DataSourceConfig = (): DataSourceOptions => {
     return {
       type: "sqlite",
       database: ":memory:",
-      synchronize: false,
+      synchronize: true,
       entities: [entitiesPath],
     };
   }
